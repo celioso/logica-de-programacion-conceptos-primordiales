@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos los números pares del 1 al 100</title>
+    <link rel="shortcut icon" href="./images/Fifa">
+    
+</head>
+<body>
+    <h><center>PROGRAMA - Todos los números pares del 1 al 100</center></h>
+    <script>
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var contador = 2;
+    while(contador <= 100) {
+        imprimir(contador);
+        contador = contador + 2;
+    }
+
+    imprimir("FIN")
+    
+    </script>
+</body>
+</html>
