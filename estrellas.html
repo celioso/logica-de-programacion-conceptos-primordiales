@@ -13,8 +13,8 @@
     function saltarLinea() {
 
         document.write("<br>");
-        document.write("<br>");
-        document.write("<br>");
+        /*document.write("<br>");
+        document.write("<br>");*/
     }
     function imprimir(frase){
 
@@ -22,35 +22,16 @@
         saltarLinea();
     }
 
-    var numeroPensado = Math.round(Math.random() * 10);
-    var intentos = 3;
-    var contador = 1;
-
-    while (contador <= intentos){
-    
-        var numeroLanzado = parseInt(prompt("Ingrese un número entre 0 - 10"));  
-
-        if (numeroPensado == numeroLanzado){
-            
-            alert("Usted acertó , en el intento "+ contador + " el número pensado era "+numeroPensado);
-            break;
+    for(var lineas = 1; lineas <=3; lineas++){
+        for(var columnas =1; columnas<=10; columnas++){
+            document.write("*");
         }
 
-        else{
-            alert("Usted erró"); 
-        }
-
-        contador++;
-    }
-    if (numeroPensado == numeroLanzado){
-            imprimir("Usted acertó , en el intento "+ contador + " el número pensado era "+numeroPensado);
-    }
-
-    else{
-        imprimir("Usted erró, el numero pensado era "+ numeroPensado); 
+        saltarLinea();
     }
 
     imprimir("FIN");
+
 </script>
 </body>
 </html>
